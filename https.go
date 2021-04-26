@@ -184,7 +184,11 @@ func (proxy *ProxyHttpServer) handleHttps(w http.ResponseWriter, r *http.Request
 			var err error
 			tlsConfig, err = todo.TLSConfig(host, ctx)
 			if err != nil {
-				httpError(proxyClient, ctx, err)
+				if todo.MitmError != nil {
+					todo.MitmError(r, ctx, err)
+				} else {
+					httpError(proxyClient, ctx, err)
+				}
 				return
 			}
 		}
