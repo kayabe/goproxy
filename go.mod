@@ -2,9 +2,4 @@ module github.com/kayabe/goproxy
 
 go 1.15
 
-require github.com/kayabe/goproxy/ext v0.0.0
-
-replace (
-	github.com/kayabe/goproxy v0.0.0 => ./
-	github.com/kayabe/goproxy/ext v0.0.0 => ./ext
-)
+require github.com/rogpeppe/go-charset v0.0.0-20190617161244-0dc95cdf6f31
