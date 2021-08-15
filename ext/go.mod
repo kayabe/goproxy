@@ -7,4 +7,7 @@ require (
 	github.com/rogpeppe/go-charset v0.0.0-20180617210344-2471d30d28b4
 )
 
-replace github.com/kayabe/goproxy => ../
+replace (
+	github.com/kayabe/goproxy v0.0.0 => ../
+	github.com/kayabe/goproxy/ext v0.0.0 => ./
+)
