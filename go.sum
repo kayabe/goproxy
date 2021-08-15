@@ -1,3 +1,3 @@
-github.com/kayabe/goproxy/ext v0.0.0-20210426161301-a91524d4b43a h1:3MWs9Koid1+dvPKec8o4sYU/xDG8tT75+dLIa26fUNo=
-github.com/kayabe/goproxy/ext v0.0.0-20210426161301-a91524d4b43a/go.mod h1:r/6aNEUGiRnV9YybGq1TxB27ElxXQEF0J8VxoVwrqzw=
+github.com/kayabe/goproxy/ext v0.0.0-20210426161730-7be78cf1aa85 h1:0Hb8f6ok7YPM0uGloLKU/qVL7Oawb0YlM43UH3hfRMc=
+github.com/kayabe/goproxy/ext v0.0.0-20210426161730-7be78cf1aa85/go.mod h1:r/6aNEUGiRnV9YybGq1TxB27ElxXQEF0J8VxoVwrqzw=
 github.com/rogpeppe/go-charset v0.0.0-20180617210344-2471d30d28b4/go.mod h1:qgYeAmZ5ZIpBWTGllZSQnw97Dj+woV0toclVaRGI8pc=
