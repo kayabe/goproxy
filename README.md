@@ -1,7 +1,6 @@
 # Introduction
 
 [![GoDoc](https://godoc.org/github.com/kayabe/goproxy?status.svg)](https://godoc.org/github.com/kayabe/goproxy)
-[![Join the chat at https://gitter.im/kayabe/goproxy](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kayabe/goproxy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![Status](https://github.com/kayabe/goproxy/workflows/Go/badge.svg)
 
 Package goproxy provides a customizable HTTP proxy library for Go (golang),
