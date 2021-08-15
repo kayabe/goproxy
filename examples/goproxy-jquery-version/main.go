@@ -6,7 +6,6 @@ import (
 	"regexp"
 
 	"github.com/kayabe/goproxy"
-	"github.com/kayabe/goproxy/ext/html"
 )
 
 var (
