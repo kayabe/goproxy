@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/kayabe/goproxy"
-	"github.com/kayabe/goproxy-ext/image"
+	"github.com/kayabe/goproxy/ext/image"
 )
 
 func main() {

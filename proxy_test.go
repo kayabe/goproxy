@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/kayabe/goproxy"
-	goproxy_image "github.com/kayabe/goproxy-ext/image"
+	goproxy_image "github.com/kayabe/goproxy/ext/image"
 )
 
 var acceptAllCerts = &tls.Config{InsecureSkipVerify: true}

@@ -10,9 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kayabe/goproxy-ext/auth"
-
 	"github.com/kayabe/goproxy"
+	"github.com/kayabe/goproxy/ext/auth"
 )
 
 const (

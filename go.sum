@@ -1,4 +1,1 @@
-github.com/kayabe/goproxy v1.3.0/go.mod h1:vCOaGJT8wj4l7/oMnb2aUJGZQ+iU29zs0uDLMzyIvF8=
-github.com/kayabe/goproxy-ext v0.0.2 h1:4EhqCFwQ4NsFl+zUhN/3Ig9ccR+EQgfrIpG3Q4IXbM8=
-github.com/kayabe/goproxy-ext v0.0.2/go.mod h1:XFleuI/VGDi0aTXhjA+NevTuHYAbzeQ4/4zYjTe3Amo=
 github.com/rogpeppe/go-charset v0.0.0-20180617210344-2471d30d28b4/go.mod h1:qgYeAmZ5ZIpBWTGllZSQnw97Dj+woV0toclVaRGI8pc=

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/kayabe/goproxy"
-	goproxy_html "github.com/kayabe/goproxy-ext/html"
+	goproxy_html "github.com/kayabe/goproxy/ext/html"
 )
 
 type Count struct {
