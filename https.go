@@ -259,9 +259,8 @@ func (proxy *ProxyHttpServer) handleHttps(w http.ResponseWriter, r *http.Request
 
 				text := resp.Status
 				statusCode := strconv.Itoa(resp.StatusCode) + " "
-				if strings.HasPrefix(text, statusCode) {
-					text = text[len(statusCode):]
-				}
+				text = strings.TrimPrefix(text, statusCode)
+
 				// always use 1.1 to support chunked encoding
 				if _, err := io.WriteString(rawClientTls, "HTTP/1.1"+" "+statusCode+text+"\r\n"); err != nil {
 					ctx.Warnf("Cannot write TLS response HTTP status from mitm'd client: %v", err)
@@ -358,7 +357,7 @@ func (proxy *ProxyHttpServer) NewConnectDialToProxyWithHandler(https_proxy strin
 		return nil
 	}
 	if u.Scheme == "" || u.Scheme == "http" {
-		if strings.IndexRune(u.Host, ':') == -1 {
+		if !strings.ContainsRune(u.Host, ':') {
 			u.Host += ":80"
 		}
 		return func(network, addr string) (net.Conn, error) {
@@ -398,7 +397,7 @@ func (proxy *ProxyHttpServer) NewConnectDialToProxyWithHandler(https_proxy strin
 		}
 	}
 	if u.Scheme == "https" || u.Scheme == "wss" {
-		if strings.IndexRune(u.Host, ':') == -1 {
+		if !strings.ContainsRune(u.Host, ':') {
 			u.Host += ":443"
 		}
 		return func(network, addr string) (net.Conn, error) {
