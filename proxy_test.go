@@ -850,7 +850,7 @@ func newTestCertStorage() *TestCertStorage {
 
 func TestProxyWithCertStorage(t *testing.T) {
 	tcs := newTestCertStorage()
-	t.Logf("TestProxyWithCertStorage started")
+	// t.Logf("TestProxyWithCertStorage started")
 	proxy := goproxy.NewProxyHttpServer()
 	proxy.CertStore = tcs
 	proxy.OnRequest().HandleConnect(goproxy.AlwaysMitm)

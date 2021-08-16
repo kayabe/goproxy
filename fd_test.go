@@ -8,7 +8,6 @@ import (
 	"net/http/httptest"
 	"net/url"
 	"os"
-	"strings"
 	"testing"
 
 	"github.com/kayabe/goproxy"
@@ -37,7 +36,7 @@ func printfds(msg string, t *testing.T) int {
 	for i := range names {
 		lines = append(lines, fmt.Sprintf("%2v → %v", names[i], links[i]))
 	}
-	t.Logf("[%s] /proc/self/fd:\n\t%s", msg, strings.Join(lines, "\n\t"))
+	// t.Logf("[%s] /proc/self/fd:\n\t%s", msg, strings.Join(lines, "\n\t"))
 	return len(fds)
 }
 
